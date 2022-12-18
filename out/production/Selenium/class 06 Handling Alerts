@@ -1,0 +1,22 @@
+*********-HANDLING ALERTS IN SELENIUM-*****************
+
+WHAT IS ALERT?
+ Alert is the popup message that u get on your application.
+ Alert takes the focus og our main screen/page.
+ We can not proceed until we have handle this alert.
+
+
+TYPES OF ALERTS :
+ 1.webBase Alerts/html Alerts : We can simply inspect them and deal with them in a regular way
+ 2.javaScript Alert : We can handle these alerts by using Alert interface in Selenium.
+ 3.Window base Alert : we can't handle them in Selenium.
+
+
+
+ Authentication alert:
+ information inside the url
+
+ admin:admin
+ password
+
+ URL: https://admin:admin@the-internet.herokuapp.com/basic_auth

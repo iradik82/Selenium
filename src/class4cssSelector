@@ -1,0 +1,31 @@
+class 4 CSS Selector
+
+tagname[attribute='attribute value']
+
+className --> "." tagname.classValue             button.btn                          <button id="but" class="btn">hello</button>
+
+ID --> "#"        tagname#IDValue                button#btn                          <button id="but" class="btn">hello</button>
+
+contains()-->*                                   input[placeholder*='Email']         <input id="name" placeholder="PleaseEmailMe"/>
+tagname[attribute*='partial attribute value']    input[placeholder*='Please']
+
+starts-with -->^
+tagname[attribute^='starting attribute value']   input[type^='pass']                 <input id="56_" type="passwordType()"
+
+ends with --> $
+tagname[attribute $='ending attribute value']    img[src$='.png']                    <img id=".. 6_" src="088454syntax.png"
+
+
+driver.FindElement(By.css());
+     -gets u first encountered element
+
+driver.FindElements(By.css());
+     -gets u all the elements encountered
+
+
+       click->select the radio button
+
+boolean  isEnabled()--> check if the radio button can be selected or not (if not selectable usually it is greyed out.
+boolean  isSelected()->checks if the radio button is selected or not(return if selected)
+
+         isDisplayed()->checks if the webElement is displayed on the page or not
