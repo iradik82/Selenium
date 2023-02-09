@@ -18,9 +18,11 @@ public class iframeswitch {
 
         driver.switchTo().frame(1);
 
-        WebElement animals = driver.findElement(By.xpath("//b[text()='Animals :']"));
-        String listAnimal= animals.getText();
-        System.out.println(listAnimal);
+        List<WebElement> animals = driver.findElements(By.id("animals"));
+        for( WebElement animal:animals){
+            String anim= animal.getText();
+            System.out.println("Animal list : " + anim);
+        }
 
         WebElement animalList =  driver.findElement(By.xpath("//select[@id='animals']"));
         Select listAnimals=new Select(animalList);

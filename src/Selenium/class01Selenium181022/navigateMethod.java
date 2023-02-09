@@ -21,7 +21,10 @@ public class navigateMethod {
         driver.navigate().forward();
         Thread.sleep(2000);
         driver.navigate().refresh();
-
+        Thread.sleep(2000);
+        driver.navigate().back();
+        Thread.sleep(1000);
+driver.quit();
     }
 
 }

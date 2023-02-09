@@ -14,14 +14,14 @@ public class AdditinalMethods {
         WebElement btn=driver.findElement(By.cssSelector("button#buttoncheck"));
         String text=btn.getText();
         System.out.println(text);
-<<<<<<< HEAD
+
         System.out.println("ndsjfnsk");
-=======
+
 
         System.out.println("bla bla bla");
 
 
->>>>>>> b6199e20a49094c57966d47d75b0396175852e88
+
 
         String idvalue=btn.getAttribute("id");
 

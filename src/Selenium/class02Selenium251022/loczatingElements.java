@@ -15,7 +15,7 @@ public class loczatingElements {
 
         driver.findElement(By.id("email")).sendKeys("radik82978");
         driver.findElement(By.name("pass")).sendKeys("12345");
-       // driver.findElement(By.name("login")).click();
+        driver.findElement(By.name("login")).click();
 
 
         // driver.findElement(By.linkText("Forgot password?")).click();

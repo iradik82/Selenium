@@ -20,14 +20,16 @@ public class MultiplleSelectDropDown {
         Select sel=new Select(dd);
         //by index
         sel.selectByIndex(3);
+        //By VisibleText
         sel.selectByVisibleText("Texas");
+        //By Value
         sel.selectByValue("Ohio");
 
         Thread.sleep(2000);
         //deselect by index
         sel.deselectByIndex(3);
 
-        //sellect All
+        //select All
         List<WebElement> options = sel.getOptions();
         for (int i = 0; i <options.size() ; i++) {
             sel.selectByIndex(i);
@@ -37,7 +39,7 @@ public class MultiplleSelectDropDown {
         //deselect all
         sel.deselectAll();
 
-        //how can we check if the drop Down is multi select or not
+        //how can we check if the drop-Down is multi select or not
         boolean multiselect=sel.isMultiple();
         System.out.println(multiselect);
 

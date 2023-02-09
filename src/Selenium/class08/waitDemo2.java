@@ -1,6 +1,7 @@
 package Selenium.class08;
 
 import org.openqa.selenium.Alert;
+import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.support.ui.ExpectedConditions;
@@ -18,6 +19,8 @@ public class waitDemo2 {
         driver.get( "https://chercher.tech/practice/explicit-wait-sample-selenium-webdriver");
         driver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
         driver.manage().window().maximize();
+
+        driver.findElement(By.id("alert")).click();
 
         WebDriverWait wait=new WebDriverWait(driver,20);
         wait.until(ExpectedConditions.alertIsPresent());

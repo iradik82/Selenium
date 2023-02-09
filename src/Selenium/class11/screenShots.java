@@ -1,6 +1,6 @@
 package Selenium.class11;
 
-import org.apache.commons.io.FileUtils;
+//import org.apache.commons.io.FileUtils;
 import org.openqa.selenium.*;
 import org.openqa.selenium.chrome.ChromeDriver;
 
@@ -16,7 +16,7 @@ public class screenShots {
         driver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
         driver.manage().window().maximize();
 
-        //user name
+        //username
         WebElement userName = driver.findElement(By.xpath("//input[@name='ctl00$MainContent$username']"));
         userName.sendKeys("Tester", Keys.TAB);
         WebElement pass = driver.findElement(By.xpath("//input[@name='ctl00$MainContent$password']"));
@@ -26,7 +26,7 @@ public class screenShots {
         TakesScreenshot ss=(TakesScreenshot)driver;
         //screenshot is taken at this point
         File sourceFile=ss.getScreenshotAs(OutputType.FILE);
-        FileUtils.copyFile(sourceFile,new File("screenshots/SmartBear/adminLogin.png"));
+        //FileUtils.copyFile(sourceFile,new File("screenshots/SmartBear/adminLogin.png"));
 
     }
 }

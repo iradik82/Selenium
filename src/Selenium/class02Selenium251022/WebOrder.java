@@ -1,9 +1,12 @@
 package Selenium.class02Selenium251022;
 
 
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
 
 public class WebOrder {
-    public static void main(String[] args) {
+    public static void main(String[] args) throws InterruptedException {
 
 
         System.setProperty("webdriver.chrome.driver", "drivers/chromedriver");
@@ -19,6 +22,7 @@ String title = driver.getTitle();
         }else{
             System.out.println("The tittle is incorrect :"+title);
         }
-
+        Thread.sleep(10000);
+driver.quit();
     }
 }
